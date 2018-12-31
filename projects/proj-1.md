@@ -7,9 +7,8 @@ title: 'Mantis: A Mobile App for Color Identification'
 
 Mantis is a mobile app that identifies colors based off a user-given image. The user would be able to upload or take a picture within the mobile app and select a spot on the picture to generate a specific color name and three color codes in Hex, RGB, and CMYK. Moreover, the user would be able to generate a color palette, which produces five additional colors that complement the initial chosen color. Users would be able to save it in a personal color library to keep track of saved colors and palettes chronologically. Within each saved color or palette listing, the user would be able to click on each listing to see information about the color names and color codes.
 
-{% include image.html url="" image="projects/proj-1/home.PNG" %}
+{% include image.html image="projects/proj-1/home.PNG" %}
 
-{% include image.html url="" image="projects/proj-1/wall.jpg" %}
 
 Have you ever stopped to ask yourself what color something really was? Have you ever seen a
 color and wondered exactly what that shade was?
