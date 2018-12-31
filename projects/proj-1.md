@@ -3,7 +3,7 @@ layout: post
 title: 'Mantis: A Mobile App for Color Identification'
 ---
 
-**Abstract**
+####Abstract####
 
 Mantis is a mobile app that identifies colors based off a user-given image. The user would be able to upload or take a picture within the mobile app and select a spot on the picture to generate a specific color name and three color codes in Hex, RGB, and CMYK. Moreover, the user would be able to generate a color palette, which produces five additional colors that complement the initial chosen color. Users would be able to save it in a personal color library to keep track of saved colors and palettes chronologically. Within each saved color or palette listing, the user would be able to click on each listing to see information about the color names and color codes.
 
@@ -12,7 +12,7 @@ Mantis is a mobile app that identifies colors based off a user-given image. The 
 {% include image.html image="projects/proj-1/home.PNG" %}
 
 
-**Introduction**
+####Introduction####
 
 Suppose you were hiking on a Yosemite trail and you encountered a dainty patch of flowers that
 was the utmost shade of light purple, but you couldm't really think of a color that best fit the
@@ -27,15 +27,15 @@ color codes, so they would be able to use in their projects or applications. A c
 scheme generation is an added bonus we decided to implement because we wanted users to feel
 **inspired** for their projects. Then, of course we wanted to implement a way to save favorite colors and color schemes because it would help users keep a stash of favorite colors. 
 
-**Background**
+####Background####
 
 Surveying the app store for related work, we found apps that had the general idea of what we
-were trying to but executed poorly. We knew going into this project that we were not trying to
+were trying but were executed poorly. We knew going into this project that we were not trying to
 reinvent the wheel, but instead trying to improve it. We believed that Mantis could become a
 staple on every phone, while the apps on the app store saw it as more of a novelty.
-The pictures below come from two other color identification apps on the app store. The one on
-the left provides minimal information for the user because it only displays the selected color
+The pictures below come from two other color identification apps on the app store. 
+
+The one on the left provides minimal information for the user because it only displays the selected color
 which does not give the user any other information whatsoever. The app on the right employs
-AR to identify live colors, which is innovative but annoying because the color identification is
-always moving since a user cannot pinpoint a single color due to minute movements from the
+AR to identify live colors, which is innovative but problematic because the color identification square is always moving, so users can't pinpoint a single color due to minute movements from the
 hand.
