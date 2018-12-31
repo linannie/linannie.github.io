@@ -799,11 +799,12 @@ body {
   /*
   .image-container:hover .overlay {
     opacity: 1; }
+    */
   .image-container .image {
     display: block;
     width: 100%;
     height: auto; }
-  .image-container .overlay {
+ /* .image-container .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
