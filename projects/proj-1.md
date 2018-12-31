@@ -10,9 +10,6 @@ Mantis is a mobile app that identifies colors based off a user-given image. The 
 {% include image.html image="projects/proj-1/home.PNG" %}
 
 
-Have you ever stopped to ask yourself what color something really was? Have you ever seen a
-color and wondered exactly what that shade was?
-
 **Introduction**
 
 Suppose you were hiking on a Yosemite trail and you encountered a dainty patch of flowers that
