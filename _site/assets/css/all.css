@@ -796,15 +796,12 @@ body {
   position: relative;
   width: 100%;
   margin-bottom: 20px; }
-  /*
   .image-container:hover .overlay {
-    opacity: 1; } */
-    
+    opacity: 1; }
   .image-container .image {
     display: block;
     width: 100%;
     height: auto; }
-  /*
   .image-container .overlay {
     position: absolute;
     top: 0;
@@ -824,4 +821,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); }
-  */

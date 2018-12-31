@@ -39,3 +39,5 @@ The one on the left provides minimal information for the user because it only di
 which does not give the user any other information whatsoever. The app on the right employs
 AR to identify live colors, which is innovative but problematic because the color identification square is always moving, so users can't pinpoint a single color due to minute movements from the
 hand.
+
+{% include image.html image="projects/proj-1/coloapps.png" %}
