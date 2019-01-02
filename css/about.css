@@ -1,0 +1,111 @@
+* {
+	font-family:'Quicksand', sans-serif;
+	color: #4F4E4E;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	line-height: 15px;
+	
+}
+
+
+title{
+	visibility: hidden;
+}
+
+h1{
+	color: #16a085;
+	font-size: 50px;
+	text-align: center;
+	
+}
+li{
+	/* might have to chnage this to words later*/
+	font-weight: bold;
+	display: inline;
+	margin-top: 10px;
+	
+	padding: 10px;
+	
+}
+ul{
+
+	text-align: center;
+}
+
+.pic img{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+
+	text-align: center;
+
+}
+
+.pic{
+	padding-top: 30px;
+
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	/*float: left;*/
+}
+.about{
+	text-align: center;
+	/*	padding-left: 200px;*/
+}
+
+#icons{
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+a:hover li{
+	background-color: #16a085;
+	
+}
+
+li:hover{
+  color: white;
+}
+
+i{
+	color: #16a085;
+}
+
+a:hover i{
+	color: #0f705d;
+}
+
+p.list{
+
+	text-align: justify;
+}
+
+.bio{
+	margin: 0 auto;
+     width: 500px; 
+
+	/*padding-right: 250px;*/
+	overflow: hidden;
+	padding-top: 0px;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	/*float: right;*/
+	text-align: left;
+
+
+	
+
+}
+.bio img{
+	height: 25px;
+	width: 25px;
+
+
+}
+#myp{
+	line-height: 200%;
+}
+	
+#line{
+	text-align: center;
+}
+
+

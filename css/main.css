@@ -1,0 +1,126 @@
+/* front page */
+
+* {
+	font-family:'Quicksand', sans-serif;
+	color: #4F4E4E;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+}
+
+.name{
+	text-align: center;
+	font-family: "Sacramento";
+	font-size: 100px;
+	color: #CC9DD1;
+
+	margin-top: 250px;
+}
+
+li{
+	/* might have to chnage this to words later*/
+	font-weight: bold;
+	display: inline;
+
+	
+	padding: 10px;
+	
+}
+
+a:hover li{
+	background-color: #CC9DD1;
+	
+}
+
+li:hover{
+  color: white;
+}
+
+.menu{
+	text-align: center;
+}
+
+.profile{
+	margin: auto;
+}
+.profile img{
+	border-radius: 100%;
+	height: 450px;
+	width: 450px;
+
+}
+
+.button{
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+.pic img{
+	height: 300px;
+	width: 300px;
+	border-radius: 100%;
+	display: block;
+	margin: 0 auto;
+
+}
+.about{
+	text-align: center;
+}
+
+#icons{
+	
+	padding-top: 10px;
+}
+
+#aboutTitle{
+	color: #16a085;
+	font-size: 50px;
+	margin-top: 250px;
+	padding-bottom: 20px;
+}
+
+i{
+	color: #16a085;
+}
+
+a:hover i{
+	color: #0f705d;
+}
+
+.bio img{
+	height: 25px;
+	width: 25px;
+
+}
+
+#container{
+	width: 700px;
+	margin: auto;
+}
+#first{
+	width: 300px;
+	float: left;
+	height: 300px
+	background-color: blue;
+	padding-left: 100px;
+}
+#first h1{
+	font-size: 50px;
+	color: #f1c40f;
+
+}
+
+#second{
+	width: 300px;
+	float: right;
+	height: 300px;	
+}
+#second h1{
+	font-size: 50px;
+	color: #ffcce6;
+}
+
+#clear{
+	clear: both;
+}

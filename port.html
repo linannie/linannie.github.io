@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+
+	<meta charset="utf-8">
+   	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+   	<meta name="viewport" content="width=device-width">
+
+
+	<link rel="icon" href="pics/001-dog.png">
+	<link rel="stylesheet" type="text/css" href="css/port.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/ad999fa51e.js"></script>
+
+	
+</head>
+<body>
+	<h1>portfoli<a target="_blank" title="Github" href="https://github.com/linannie"><i class="fa fa-github-alt fa-spin" aria-hidden="true"></i></a></h1>
+	<div class = "menu">
+			<ul>
+				<a style= "text-decoration:none;" rel= "Home" href= "index.html"><li class= "button">home</li></a>
+				<a style= "text-decoration:none;" href= "about.html"><li>about</li class= "button"></a>
+				<a style= "text-decoration:none;" href= "memes.html"><li>memes</li class= "button"></a>
+				<!--<a style= "text-decoration:none;" href= "misc.html"><li>misc.</li class= "button"></a>-->
+			</ul>		
+	</div>
+	<br><p>Here you'll find my projects. Stay tuned for more! &nbsp;&nbsp;<img id="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/65/face-with-stuck-out-tongue-and-winking-eye_1f61c.png"></p><br><br>
+	<table>
+		<tr class="row" id="r">
+			<td><a target="_blank" title="Mantis" href="files/Mantis.pdf"><img src="pics/mantis.png"></a></td>
+			<td><a target="_blank" title="Spotify vs. Zara" href="files/spot.pdf"><img src="pics/spot.png"></a>
+				
+			</td>
+			
+		</tr>
+		<tr class="row" id="r">
+			<td><a target="_blank" title="Moodsic" href="https://linannie.github.io/moodsic/"><img src="pics/moodsic.png"></a></td>
+			<td><a target="_blank" title="SnapDoc" href="https://devpost.com/software/snapdoc"><img src="pics/ibm.jpg"></a>
+				
+			</td>
+			
+		</tr>
+		<tr class="row" id="r">
+		 	<td><a target="_blank" title="Meerkat" href="http://mattdea.github.io/meerkat/"><img src="pics/meerkat.png"></a></td>
+			<td><a target="_blank" title="Cookbook" href="files/recipebook.pdf"><img src="pics/recipe.png"></a></td>
+			
+		</tr>
+		
+			
+
+		
+	</table>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+		// scroll reveal for as many rows as you want!
+		window.sr = ScrollReveal();
+		var cls = document.getElementsByClassName("row");
+
+		function show(){
+			for(var i = 0; i < cls.length; i++){
+				cls[i].id = "r" + i;
+			}
+		}
+		show();
+		for(var i = 0; i < cls.length; i++){
+			sr.reveal('#'+ cls[i].id, {duration: 1000});
+		}
+
+
+
+
+	</script>
+</body>
+</html>

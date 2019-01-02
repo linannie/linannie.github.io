@@ -1,0 +1,70 @@
+* {
+	font-family:'Quicksand', sans-serif;
+	color: #4F4E4E;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	text-align: center;
+	line-height: 15px;
+	
+}
+
+title{
+	visibility: hidden;
+}
+
+h1{
+	color:  #80e5ff;
+	font-size: 50px;
+	text-align: center;
+}
+#repair{
+	font-size: 15px;
+	font-weight: bold;
+	color: red;
+}
+li.button{
+	/* might have to chnage this to words later*/
+	font-weight: bold;
+	display: inline;
+	margin-top: 10px;
+	
+	padding: 10px;
+	
+}
+a:hover li.button{
+	background-color: #80e5ff;
+	
+}
+
+li:hover{
+  color: white;
+}
+table{
+	margin: 0 auto;
+	text-align: center;
+}
+th{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-size: 40px;
+}
+#music{
+	color: #007a99;
+	text-decoration: none;
+	position: relative;
+}
+#music:after{
+	
+}
+#music:hover:after{
+	
+}
+#reads{
+	color: #00a3cc;
+}
+#hikes{
+	color: #85e0e0;
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memes</title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width">
+	
+	<link rel="icon" href="pics/001-dog.png">
+	<link rel="stylesheet" type="text/css" href="css/memes.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	
+
+
+
+
+</head>
+<body>
+	<h1>memes</h1>
+
+	<div class = "menu">
+			<ul>
+				<a class= "button" style= "text-decoration:none;" href= "index.html"><li>home</li></a>
+				<a class= "button" style= "text-decoration:none;" rel= "about me!" href= "about.html"><li>about</li></a>
+				<a class= "button" style= "text-decoration:none;" href= "port.html"><li>portfolio</li></a>
+	
+			</ul>	
+
+		</div>
+		<div >
+			<img class="dog" id="dog1" src="pics/doge.jpg">
+			<img class="dog" id="dog2" src="pics/dogana.jpg">
+			<img class="dog" id="dog3" src="pics/dogee.jpg">
+	    </div>
+	<br><p>A collection of random memes I find funny...</p><br><br>
+	
+	<table class="table">
+		<tr class="row" >
+			<td><img src="pics/result.JPG"> </td>
+			<td><img src="pics/fake.jpg"> </td>
+			<td><img src="pics/cuddle.jpg"> </td>
+		</tr>
+		<tr class="row" >
+			<td><img src="pics/trust.JPG"></td>
+			<td><img src="pics/pug.JPG"></td>
+			<td><img src="pics/elon.JPG"></td>
+		</tr>
+		<tr class="row">
+			<td><img src="pics/hot.JPG"></td>
+			<td><img src="pics/rila.jpg"></td>
+			<td><img src="pics/trash.JPG"></td>
+			
+		</tr>
+		<tr class="row">
+			<td><img src="pics/dora.JPG"></td>
+			<td><img src="pics/avo.JPG"></td>
+		
+			
+		</tr>
+	</table>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+		// scroll reveal for as many rows as you want!
+		window.sr = ScrollReveal();
+		var cls = document.getElementsByClassName("row");
+
+		function show(){
+			for(var i = 0; i < cls.length; i++){
+				cls[i].id = "r" + i;
+			}
+		}
+		show();
+		for(var i = 0; i < cls.length; i++){
+			sr.reveal('#'+ cls[i].id, {duration: 1000});
+		}
+
+
+
+
+	</script>
+</body>
+</html>
