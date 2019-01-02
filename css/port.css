@@ -37,10 +37,6 @@ a:hover li{
 	
 }
 
-a:hover{
-	border-color: #ff3385;
-	transition: 0.5s;
-}
 
 li:hover{
   color: white;
