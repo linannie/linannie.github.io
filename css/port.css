@@ -76,3 +76,7 @@ td:hover{
 #myp{
 	line-height: 200%;
 }
+
+.pic img{
+	text-align: center;
+}
