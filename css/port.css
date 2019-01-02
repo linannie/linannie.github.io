@@ -33,6 +33,7 @@ li{
 
 a:hover li{
 	background-color: 	 #ff3385;
+	  transition: 0.5s;
 	
 }
 
@@ -57,5 +58,5 @@ td{
 }
 td:hover{
 	border-color: #ff3385;
-	transition: 1s;
+	transition: 0.5s;
 }
