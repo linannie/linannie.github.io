@@ -5,7 +5,6 @@
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 title{
-	text-align: center;
 	visibility: hidden;
 }
 
@@ -24,7 +23,6 @@ i:hover{
 
 }
 li{
-	text-align: center;
 	/* might have to chnage this to words later*/
 	font-weight: bold;
 	display: inline;
@@ -33,17 +31,18 @@ li{
 	padding: 10px;
 	
 }
+ul{
+	text-align: center;
+}
 
 a:hover li{
-	text-align: center;
-	background-color: 	 #ff3385;
+	background-color: 	 #80e5ff;
 	  transition: 0.5s;
 	
 }
 
 
 li:hover{
-	text-align: center;
   color: white;
 }
 
@@ -64,13 +63,16 @@ td{
 	border: 10px solid white;
 }
 td:hover{
-	border-color: #ff3385;
+	border-color: #80e5ff;
 	transition: 0.5s;
 }
 
-div .projBody{
+.projBody{
 	margin: 0 auto;
 	width: 600px;
 	text-align: left;
-	line-height: 15px;
+}
+
+#myp{
+	line-height: 200%;
 }
