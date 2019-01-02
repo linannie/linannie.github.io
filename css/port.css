@@ -68,7 +68,7 @@ td:hover{
 	transition: 0.5s;
 }
 
-.projBody{
+div .projBody{
 	margin: 0 auto;
 	width: 600px;
 	text-align: left;
