@@ -57,4 +57,5 @@ td{
 }
 td:hover{
 	border-color: #ff3385;
+	transition: 1s;
 }
