@@ -4,24 +4,13 @@
 	line-height: 15px;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
-title{
-	visibility: hidden;
-}
 
 h1{
 	font-size: 50px;
-	/*color: 	 #ff3385;*/
 	color: #80e5ff;
 	text-align: center;
 }
-i{
-	color: #ff3385;
 
-}
-i:hover{
-	color: #d2286c;
-
-}
 li{
 	/* might have to chnage this to words later*/
 	font-weight: bold;
@@ -41,29 +30,20 @@ a:hover li{
 	
 }
 
-
 li:hover{
   color: white;
 }
 
-#emoji{
-	height: 25px;
-	width: 25px;
-}
-table{
-	text-align: center;
+.projBody{
 	margin: 0 auto;
-}
-img{
-	height: 250px;
-	width: 400px;
-}
-td{
-	text-align: center;
-	border: 10px solid white;
-}
-td:hover{
-	border-color: #80e5ff;
-	transition: 0.5s;
+	width: 600px;
+	text-align: left;
 }
 
+#myp{
+	line-height: 200%;
+}
+
+.pic img{
+	text-align: center;
+}
