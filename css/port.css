@@ -61,3 +61,8 @@ td:hover{
 	border-color: #ff3385;
 	transition: 0.5s;
 }
+
+.projBody{
+	margin: 0 auto;
+	width: 500px;
+}
