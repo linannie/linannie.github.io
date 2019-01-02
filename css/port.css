@@ -1,7 +1,6 @@
 * {
 	font-family:'Quicksand', sans-serif;
 	color: #4F4E4E;
-	text-align: center;
 	line-height: 15px;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
@@ -23,6 +22,7 @@ i:hover{
 
 }
 li{
+	text-align: center;
 	/* might have to chnage this to words later*/
 	font-weight: bold;
 	display: inline;
@@ -56,6 +56,7 @@ img{
 	width: 400px;
 }
 td{
+	text-align: center;
 	border: 10px solid white;
 }
 td:hover{
