@@ -40,10 +40,15 @@ li:hover{
 	text-align: left;
 }
 
-#myp{
+.myp{
 	line-height: 200%;
 }
 
 .pic img{
 	text-align: center;
+}
+
+img{
+	max-height: 300px;
+	width: auto;
 }
