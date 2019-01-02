@@ -1,0 +1,59 @@
+* {
+	font-family:'Quicksand', sans-serif;
+	color: #4F4E4E;
+	line-height: 15px;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+title{
+	visibility: hidden;
+}
+
+h1{
+	font-size: 50px;
+	/*color: 	 #ff3385;*/
+	color: #9befa1;
+	text-align: center;
+}
+
+li{
+	/* might have to chnage this to words later*/
+	font-weight: bold;
+	display: inline;
+
+	
+	padding: 10px;
+	
+}
+ul{
+	text-align: center;
+}
+
+a:hover li{
+	background-color: 	 #9befa1;
+	  transition: 0.5s;
+	
+}
+
+
+li:hover{
+  color: white;
+}
+
+
+table{
+	text-align: center;
+	margin: 0 auto;
+}
+img{
+	height: 312.5px;
+	width: 500px;
+}
+td{
+	text-align: center;
+	border: 10px solid white;
+}
+td:hover{
+	border-color: #9befa1;
+	transition: 0.5s;
+}
+

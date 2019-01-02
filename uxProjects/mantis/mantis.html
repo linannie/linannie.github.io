@@ -35,7 +35,7 @@
 		<p class="myp">Mantis is a mobile app that identifies colors based off a user-given image. The user would be able to upload or take a picture within the mobile app and select a spot on the picture to generate a specific color name and three color codes in Hex, RGB, and CMYK. In addition, the user would be able to generate a color palette, which produces five additional colors that complement the initial chosen color. Users would be able to save it in a personal color library to keep track of saved colors and palettes chronologically. Within each saved color or palette listing, the user would be able to click on each listing to see information about the color names and color codes.</p>
 		<div class="pic">
 			<img src="pics/home.PNG">
-		</div>
+		</div><br>
 		
 		<h2>Introduction</h2>
        <p class="myp">
@@ -50,7 +50,7 @@ shade. It wasn't quite a purple shade because it had some pink tones, but it was
 <p class="myp">We also decided to make sure our color identification provides users with exact information like
 color codes, so they would be able to use in their projects or applications. A color
 scheme generation is an added bonus we decided to implement because we wanted users to feel
-**inspired** for their projects. Then, of course we wanted to implement a way to save favorite colors and color schemes because it would help users keep a stash of favorite colors. </p>
+<strong>inspired</strong> for their projects. Then, of course we wanted to implement a way to save favorite colors and color schemes because it would help users keep a stash of favorite colors. </p><br>
       
 
       <h2>Background</h2>
@@ -68,7 +68,59 @@ which does not give the user any other information whatsoever. The app on the ri
 AR to identify live colors, which is innovative but problematic because the color identification square is always moving, so users can't pinpoint a single color due to minute movements from the
 hand.</p>
 
-		
+		<p class="myp">Also the apps on the app store did not allow for the full range of color. If a user identified at any shade of green it would just identify a basic color like “Green” or “Red” instead of something
+more specific like “Lime” or “Scarlet”. Along with that, the UI only worsened the usability of
+those apps, since navigation was not intuitive. We had no idea how to get back to using the
+camera for Color Name AR. </p>
+
+<p class="myp">Mantis improved on both of those parts. With the API that we used
+to identify color, it retrieved the hex, RGB, and CMYK codes for the color that was chosen and
+the color palette generation; this allowed us to display the exact color that was chosen on your
+device. Also, our planned UI was very intuitive and flexible. A first-time user could easily
+navigate the app and understand how to use it. Our Color Library implementation also helped
+users keep track of their favorite colors and palettes so they would be able to use it in the future.</p><br>
+
+		<h2>Conceptual Model</h2>
+		<p class="myp">The conceptual design of our app was extremely simplistic and consisted of three main
+components: the camera, upload, and Color Library. By combining these three
+pieces, we created a <strong>unique</strong> user experience that solved the problem of being able to analyze,
+identify, and save colors into palettes. The app allows for user input via the
+camera or upload option and  would then transition to an intermediary color selector page. There,
+a picker can individually select a color or choose to generate a palette from the dominant
+colors of the image, allowing for a variety of options. Lastly, the user selection can be saved and accessed within the Color
+Library allowing for as many color palettes as the user would like to store and re-access.</p> <br>
+		<h2>Prototype</h2>
+		<p class="myp">To create the Mantis app, we decided to use the Ionic Framework which is an open-source SDK for hybrid mobile app development, built on AngularJS and Apache Cordova. We had a total of five main pages within our app. The first page consisted of the home page which gave the user an three options: taking a picture, uploading a picture, and navigating to the Color Library. 
+		</p>
+		<div class="pic">
+			<img src="pics/mov.png">
+		</div>
+		<p class="myp">We wanted our whole app to be colorful because it was an app that related to the notion of colors, so we chose Mantis as our name because it is based on Mantis Shrimp which has twelve color-receptive cones whereas humans have only three. This means that Mantis Shrimp can see colors our brains are not even capable of processing. Thus, the home page’s title is in rainbow and the background is a moving gradient as seen above.
+	</p>
+		<p class="myp">Our next page displays the picture that the user chooses, and wherever the user touches on the picture, the color, hex code, and RGB codes will displayed below. This is done with an API built off of AngularJS that specifically spits out the exact color value. This page also includes navigation in the bottom bar which allows the user to navigate to the previous page, save the identified color, and generate a color palette that compliments the identified color. The color palette generator is implemented with the ColorMind REST API, which uses deep learning to learn color styles from photographs, movies, and popular art in order to create aesthetically pleasing color schemes.
+		</p>
+		<div class="pic">
+			<img src="pics/choose.png">
+		</div>
+		<p class="myp">The next main page is the Color Library page. This page displays all the colors and palettes that the user has saved, chronologically. We figured that the user would like to access the most recent save so we made sure the page displayed most recent to least recent. We implemented this by using Ionic’s built in Storage plugin, which allows storage of key value pairs, so we can keep track of color or palette information. 
+		</p>
+		<div class="pic">
+			<img src="pics/lib.png">
+		</div>
+		<p class="myp">Then, within each color or palette listed in the Color Library, the user would be able to click on each listing to see more information. For example, the picture below shows more information of a color, which will have hex, RGB, and CMYK codes. A palette page would display each of the colors in the palette with their respective color codes as well. 
+		</p>
+		<div class="pic">
+			<img src="pics/save.png">
+		</div><br>
+		<h2>Discussion</h2>
+		<p class="myp">As you could imagine, trying to implement something like this was not easy and we ended up running into a lot of issues. First off, our camera could not actually upload a picture that we took right there. The problem we found was that the app would push to the next page immediately after pressing the camera button, so it would not push the picture we just took until the next time that we hit the camera button. </p>
+
+		<p class="myp">Along with that, our eyedropper API would not implement as cohesively as we wanted it to. The eyedropper API would allow users to zoom in and really select the color they wanted, so our app did not have the accuracy that we wanted while selecting colors. From making Mantis, we learned that mobile apps are hard to make. You cannot just take APIs and fit them like puzzle pieces to complete something. There are a lot of steps that have to be taken into consideration before you actually have something functioning. Along with that, we learned that a lot of thought goes into the interaction design. This ended up leading to a fair amount of time being spent on making sure that our app followed all the standards.</p><br>
+
+		<h2>Future Work</h2>
+		<p class="myp">With an app like this, the possibilities are limitless for an extension. If we were to continue working on this project, we would want to clean it up and add more technical features. We want the user to be able to zoom, crop, and manipulate their pictures if they want the API to create color palette for just one portion of the screen.</p>
+		<p class="myp"> Along with that we would also like to add the ability to make accounts. Your account would allow you to save your data and access it on all devices. This aspect of this app has not been touched on at all by similar works and we feel like we can expand greatly in that area.
+		</p>
 
 	</div>
 
