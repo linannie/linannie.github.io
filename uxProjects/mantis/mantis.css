@@ -36,7 +36,7 @@ li:hover{
 
 .projBody{
 	margin: 0 auto;
-	width: 600px;
+	width: 650px;
 	text-align: left;
 }
 
@@ -49,6 +49,6 @@ li:hover{
 }
 
 img{
-	max-height: 300px;
+	max-height: 400px;
 	width: auto;
 }
