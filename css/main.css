@@ -1,21 +1,51 @@
 /* front page */
 
 * {
-	font-family:'Quicksand', sans-serif;
-	color: #4F4E4E;
+	font-family:'Muli', sans-serif;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
   margin: 0;
   padding: 0;
   line-height: 50px;
 }
 
+
+html{
+	scroll-behavior: smooth;
+}
+
+.infoText {
+	color:#595858;
+}
+
 .name{
-	text-align: center;
-	font-family: "Sacramento";
-	font-size: 100px;
+	/*text-align: center;*/
+	/*font-family: "Sacramento";*/
+	font-size: 60px;
 	color: #CC9DD1;
 
-	margin-top: 250px;
+	margin-bottom: 100px;
+	padding-left: 100px;
+	width: 90%;
+	/*margin-top: -20px;*/
+}
+
+#nameDiv{
+	float: left;
+
+}
+
+#links{
+	margin-top: 30px;
+	font-size: 30px;
+	width: 95%;
+
+}
+
+#shortBio{
+	/*margin-top:100px;*/
+
+	width: 80%;
+	margin:auto;
 }
 
 li{
@@ -81,12 +111,11 @@ li:hover{
 	padding-bottom: 20px;
 }
 
-i{
-	color: #16a085;
-}
 
-a:hover i{
-	color: #0f705d;
+
+a:hover {
+	transition: 0.3s;
+	color: #CC9DD1;
 }
 
 .bio img{
@@ -124,4 +153,42 @@ a:hover i{
 
 #clear{
 	clear: both;
+}
+
+/* For work widgets */
+
+
+table{
+
+	text-align: center;
+	margin: 0 auto;
+	/*margin-top: 100px;*/
+}
+img{
+	height: 312.5px;
+	width: 500px;
+
+}
+td{
+	text-align: center;
+	border: 10px solid white;
+
+}
+td:hover{
+	/*border-color: #9befa1;
+	transition: 0.5s;*/
+
+	transform: scale(1.04);
+    transition: transform 400ms ease-out;
+}
+
+.projImg{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	transition: transform 400ms ease-out;
+}
+
+.widgets{
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
 }

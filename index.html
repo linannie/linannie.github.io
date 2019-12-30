@@ -9,14 +9,143 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Crafty+Girls|Sacramento" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/script.js" ></script>
 		<script src="https://use.fontawesome.com/ad999fa51e.js"></script>
 		<meta name="viewport" content="width=device-width">
 	</head>
+	<!--<img src="pics/annie.JPG">-->
 	<body>
+
+		<div id="top-bar">
+
+			<div id="nameDiv">
+			<h1 class="name">annie lin</h1>
+			</div>
+
+			<div id="links">
+			<p style="text-align:right;">
+				<a rel="Projects" href="#allProj" style= "text-decoration:none;">Work</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<a  rel= "about me!" href= "about.html" style= "text-decoration:none;"> About</a></p>
+
+			
+
+			</div>
+		</div>
+
+		<div id="shortBio">
+			<br>
+			<br>
+
+			<p  style="font-weight: bold; font-size: 30px; color:464646;">Hi, I'm Annie! </p>
+			
+
+				<p class="infoText" style="font-size: 22px;line-height: 40px" >As recent gradute from UC Davis who studied Computer Science with a minor in Psychology, I'm interested in bridging the gap between the two fields through <span style="color:#FAC20A">Human-Computer Interaction</span>.
+				</p>
+				<br>
+
+				<p class="infoText" style="font-size: 22px;line-height: 30px">My research interests are <i>computer supported cooperative work and social computing</i>, <i>behavioral and cognitive sciences in computing</i>, and <i>assistive technology</i>.</p>
+				<br>
+				<p class="infoText" style="font-size: 22px;line-height: 30px">Feel free to connect and chat with me!</p>
+
+
+			<br>
+		</div>
+
+		<table id="allProj">
+
+		<tr class="row" id="r">
+			<td>
+				<div class="widgets">
+				<a title="Mantis" href="uxProjects/mantis/mantis.html"><img class="projImg" src="pics/mantis.png"></a>
+				<div><p class="infoText">An iOS app for color identification</p></div>
+				</div>
+			</td>
+
+				
+			<td>
+				<div class="widgets">
+				<a title="Spotify vs. Zara" href="uxProjects/spotify/spot.html"><img class="projImg" src="pics/spot.png"></a>
+				<div><p class="infoText">texr</p></div>
+			</div>
+				
+			</td>
+			
+			
+		</tr>
+		<tr class="row" id="r">
+			<td>
+				<div class="widgets">
+				<a title="Ringly Analysis" href="uxProjects/ringly/ringly.html"><img class="projImg" src="pics/ringly.png"></a>
+				<div><p class="infoText">text</p></div>
+				</div>
+				
+			</td>
+			<td>
+				<div class="widgets">
+				<a target="_blank" title="Moodsic" href="https://linannie.github.io/moodsic/"><img class="projImg" src="pics/moodsic.png"></a>
+				<div><p class="infoText">text</p></div>
+				</div>
+			</td>
+		
+			
+		</tr>
+
+		</tr>
+		<tr class="row" id="r">
+			<td>
+				<div class="widgets">
+				<a target="_blank" title="SnapDoc" href="https://devpost.com/software/snapdoc"><img class="projImg" src ="pics/ibm.jpg"></a>
+				<div><p class="infoText">text</p></div>
+				</div>
+				
+			</td>
+			<td>
+				<div class="widgets">
+				<a target="_blank" title="Meerkat" href="http://mattdea.github.io/meerkat/"><img class="projImg" src="pics/meerkat.png"></a>
+				<div><p class="infoText">text</p></div>
+				</div>
+			</td>
+			
+		</tr>
+
+		
+
+		
+	</table>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+		// scroll reveal for as many rows as you want!
+		window.sr = ScrollReveal();
+		var cls = document.getElementsByClassName("row");
+
+		function show(){
+			for(var i = 0; i < cls.length; i++){
+				cls[i].id = "r" + i;
+			}
+		}
+		show();
+		for(var i = 0; i < cls.length; i++){
+			sr.reveal('#'+ cls[i].id, {duration: 1000});
+		}
+
+
+
+
+	</script>
+		<!--
+		<div>
+			
+			Hi I'm Annie! With my knowledge in Computer Science and Psychology I'm interested in bridging the gap between the two fields through Human-Computer Interaction. I hope to apply my technical experience and research knowledge into a UX Research career. Feel free to connect and chat with me!
+		</div>
+	-->
+		<!--
+
 		<div class = "name">
-			<!--<img src="pics/annie.JPG">-->
+			
 			<h1 class="name">annie lin</h1>
 		</div>
 		<div class = "menu">
@@ -25,9 +154,9 @@
 				<a class= "button" style= "text-decoration:none;" href= "dev.html"><li>development</li></a>
 				<a class= "button" style= "text-decoration:none;" href= "port.html"><li>ux research</li></a>
 				<a class= "button" style= "text-decoration:none;" href= "memes.html"><li>memes</li></a>
-				<!--<a class= "button" style= "text-decoration:none;" href= "misc.html"><li>misc.</li></a>-->
 			</ul>		
 		</div>
+	-->
 		<!--
 		<br><br>
 		
