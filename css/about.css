@@ -2,8 +2,46 @@
 	font-family:'Quicksand', sans-serif;
 	color: #4F4E4E;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
-	line-height: 15px;
+	/*line-height: 15px;*/
 	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.name{
+	/*text-align: center;*/
+	/*font-family: "Sacramento";*/
+	font-size: 60px;
+	color: #CC9DD1;
+
+	
+	padding-left: 72px;
+	width: 90%;
+	margin-top: -10px;
+
+}
+
+#nameDiv{
+	float: left;
+
+}
+
+#links{
+	margin-top: 90px;
+	font-size: 20px;
+	width: 95%;
+
+}
+
+.link{
+	color: black;
+}
+
+.link:hover {
+	transition: 0.3s;
+	color: #CC9DD1;
 }
 
 
@@ -32,8 +70,8 @@ ul{
 }
 
 .pic img{
-	height: 200px;
-	width: 200px;
+	height: 300px;
+	width: 300px;
 	border-radius: 100%;
 
 	text-align: center;
@@ -41,19 +79,20 @@ ul{
 }
 
 .pic{
-	padding-top: 30px;
+	padding-top: 65px;
 
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 	/*float: left;*/
 }
-.about{
+#about{
 	text-align: center;
+	line-height: 15px;
 	/*	padding-left: 200px;*/
 }
 
 #icons{
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 
