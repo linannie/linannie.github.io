@@ -96,3 +96,7 @@ img{
 .picmylove{
 	text-align: center;
 }
+
+video:focus {
+  outline: none;
+}
