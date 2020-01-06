@@ -8,6 +8,7 @@
 		<link rel="icon" href="pics/001-dog.png">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/script.js" ></script>
 		<script src="https://use.fontawesome.com/ad999fa51e.js"></script>
@@ -16,6 +17,7 @@
 	<!--<img src="pics/annie.JPG">-->
 	<body>
 
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 		<div id="top-bar">
 
 			<div id="nameDiv">
@@ -54,6 +56,7 @@
 		</div>
 -->
 
+		
 		<table id="allProj">
 		<tr class="row" id="r">
 			<td>
@@ -143,6 +146,26 @@
 		show();
 		for(var i = 0; i < cls.length; i++){
 			sr.reveal('#'+ cls[i].id, {duration: 1000});
+		}
+
+		//Get the button:
+		mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		}
 
 

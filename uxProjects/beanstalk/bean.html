@@ -12,9 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="../mantis/mantis.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
+	<script type="text/javascript" src="../script.js" ></script>
 	<script src="https://use.fontawesome.com/ad999fa51e.js"></script>
 </head>
 <body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 	<!--
 	<a style= "text-decoration:none;" href="../../port.html"><h1>ux research</h1></a>
 	
@@ -58,7 +60,7 @@
 		<br>
 		<hr>
 		<p class="myp">Beanstalk is an Instagram-inspired app, which includes Instagram’s core features and additional features targeted to motivate users to share exciting adventures. Users are able to upload pictures for their followers, like and comment on posts, search users, locations, and hashtags, and create a personal map for their photos. My main responsibilities while building this app was design and front-end development.</p>
-		<div class="pic">
+		<div class="pic myp">
 			<img src="pics/home.PNG">
 		</div><br>
 		<br>
@@ -66,29 +68,31 @@
        <p class="myp">
         In order to figure out our app’s design and core features, we had to figure out our target audience by creating user personas. The following personas are the ones we came up with: </p>
 
-        <div class="pic">
-			<img src="pics/up1.PNG">
-		</div><br><br>
-		<div class="pic">
-			<img src="pics/up2.PNG">
-		</div>
+	        <div class="pic myp">
+				<img src="pics/up1.PNG">
+			</div><br><br>
+			<div class="pic myp">
+				<img src="pics/up2.PNG">
+			</div>
+
+
 		<p class="myp">Based on our personas, we identified our users as those who enjoyed traveling and sharing their adventures. Our users also wanted to find other places that they hadn't been to, try new foods, and see what their friends were up to. With these aspects in mind we narrowed down core features to Instagram's main features of account creation, post creation, liking and commenting, hashtags, search for users, locations, and hashtags, a following system, and an activity feed. Our changes were an iteration on their UI/UX design and an  addtional feature of a personal map for each user. </p>
 
 		<br>
 		<h2>Low Fidelity Mockups</h2>
-		<div class="pic">
+		<div class="pic myp">
 			<img src="pics/lofi1.png">
 		</div>
-		<div class="pic"><br><br>
+		<div class="pic myp"><br><br>
 			<img src="pics/lofi2.png">
 		</div>
 
 		<br>
 		<h2>High Fidelity Mockups</h2>
-		<div class="pic">
+		<div class="pic myp">
 			<img src="pics/hifi1.png">
 		</div><br><br>
-		<div class="pic">
+		<div class="pic myp">
 			<img src="pics/hifi2.png">
 		</div>
 
@@ -98,13 +102,13 @@
 		<h2>App Flow</h2>
 
 		<p class="myp">To clarify the steps of our app and the different user interactions, we drafted the following user flow diagram. This helped map out possible actions and the user's experience journey throughout Beanstalk.</p>
-		<div class="pic">
+		<div class="pic myp">
 			<img src="pics/appflow.png">
 		</div>
 		<br><br>
 
 		<h2>Final Product</h2>
-		<div class="pic">
+		<div class="pic myp">
 			<video width="700" height="480" controls>
   				<source src="pics/bean.mp4" type="video/mp4">
 			Your browser does not support the video tag.
@@ -117,5 +121,45 @@
 	
 	</div>
 
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script>
+		// scroll reveal for as many rows as you want!
+		window.sr = ScrollReveal();
+		var cls = document.getElementsByClassName("myp");
+
+		function show(){
+			for(var i = 0; i < cls.length; i++){
+				cls[i].id = "r" + i;
+			}
+		}
+		show();
+		for(var i = 0; i < cls.length; i++){
+			sr.reveal('#'+ cls[i].id, {duration: 1000});
+		}
+
+		//Get the button:
+		mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+
+
+
+	</script>
 </body>
 </html>

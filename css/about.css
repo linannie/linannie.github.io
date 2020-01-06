@@ -1,13 +1,38 @@
-* {
-	font-family:'Quicksand', sans-serif;
-	color: #4F4E4E;
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
-	/*line-height: 15px;*/
-	
-}
+
 
 html{
 	scroll-behavior: smooth;
+}
+
+
+body * {
+font-family:'Quicksand', sans-serif;
+	color: #4F4E4E;
+}
+
+body i {
+font-family:'FontAwesome'!important;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none; /* Remove outline */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  font-size: 30px; /* Increase font size */
+}
+
+#myBtn:hover {
+	transform: scale(1.5);
+    transition: transform 400ms ease-out;
+
 }
 
 .name{
