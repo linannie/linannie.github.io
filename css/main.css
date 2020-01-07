@@ -206,7 +206,7 @@ img{
 }
 td{
 	text-align: center;
-	border: 10px solid white;
+	border: 10px solid transparent;
 
 }
 td:hover{
