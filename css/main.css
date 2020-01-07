@@ -32,6 +32,7 @@ html {
   padding: 15px; /* Some padding */
   border-radius: 100%; /* Rounded corners */
   font-size: 30px; /* Increase font size */
+  background-color: transparent;
 }
 
 #myBtn:hover {

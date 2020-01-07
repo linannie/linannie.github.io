@@ -139,6 +139,10 @@ a:hover i{
 	color: #0f705d;
 }
 
+.bread:hover{
+	color: black;
+}
+
 p.list{
 
 	text-align: justify;
@@ -172,5 +176,7 @@ p.list{
 #line{
 	text-align: center;
 }
+
+
 
 
