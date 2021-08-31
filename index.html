@@ -27,7 +27,7 @@
 
 			<div id="links">
 			<p style="text-align:right;">
-				<a class="link" rel="Projects" href="#allProj" style= "text-decoration:none;">Work</a>
+				<a class="link" rel="Projects" href="#allProj" style= "text-decoration:none; color:#CC9DD1;">Work</a>
 				&nbsp;&nbsp;&nbsp;
 
 				<a class="link" rel= "about me!" href= "about.html" style= "text-decoration:none;"> About</a></p>
@@ -177,6 +177,24 @@
 		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		}
 
+		abtButton = document.getElementById("abtButton");
+		workButton = document.getElementById("workButton");
+
+		abtButton.onclick = changeColorAbt;
+		workButton.onclick = changeColorWork; 
+
+
+    	function onClickAbout() {
+        
+        	abtButton.style.color = "purple";
+            workButton.style.color = "#4F4E4E";
+        	return false;
+    	}   
+        function onClickWork() {
+        
+            workButton.style.color = "#0f705d";
+        	return false;
+    	}   
 
 
 
