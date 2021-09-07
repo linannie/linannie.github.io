@@ -1,16 +1,15 @@
-
-html{
-	scroll-behavior: smooth;
-}
-
-
-body * {
-font-family:'Quicksand', sans-serif;
-	color: #4F4E4E;
+body /***/{
+/*font-family:'QuickSand'!important;*/
+/*font-family: 'Open Sans', sans-serif;*/
+font-family: 'Raleway', sans-serif;
 }
 
 body i {
 font-family:'FontAwesome'!important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #myBtn {
@@ -26,6 +25,7 @@ font-family:'FontAwesome'!important;
   padding: 15px; /* Some padding */
   border-radius: 100%; /* Rounded corners */
   font-size: 30px; /* Increase font size */
+  background-color: transparent;
 }
 
 #myBtn:hover {
@@ -34,17 +34,28 @@ font-family:'FontAwesome'!important;
 
 }
 
+.infoText {
+	color:#595858;
+	line-height: 50px;
+}
+
 .name{
 	/*text-align: center;*/
 	/*font-family: "Sacramento";*/
-	font-size: 60px;
-	color: #CC9DD1;
+	font-size: 40px;/*60px;*/
+	/*color: #CC9DD1;*/
+	color: #1a1a1a;
 
-	
-	padding-left: 72px;
-	width: 90%;
-	margin-top: -10px;
-
+	margin-bottom: 50px;
+	padding-left: 100px;
+	width: 100%;
+	margin-top: -20px;
+	font-family: 'Abril Fatface', cursive;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+.name:hover {
+	transition: 0.5s;
+	opacity: 0.5;
 }
 
 #nameDiv{
@@ -56,6 +67,8 @@ font-family:'FontAwesome'!important;
 	margin-top: 90px;
 	font-size: 20px;
 	width: 95%;
+	font-family: 'Abril Fatface', cursive;
+/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 
 }
 
@@ -64,37 +77,9 @@ font-family:'FontAwesome'!important;
 }
 
 .link:hover {
-	transition: 0.3s;
-	color: #CC9DD1;
-}
-
-h1{
-	font-size: 50px;
-	color: #80e5ff;
-	text-align: center;
-}
-
-li{
-	/* might have to chnage this to words later*/
-	font-weight: bold;
-	display: inline;
-
-	
-	padding: 10px;
-	
-}
-ul{
-	text-align: center;
-}
-
-a:hover li{
-	background-color: 	 #80e5ff;
-	  transition: 0.5s;
-	
-}
-
-li:hover{
-  color: white;
+	transition: 0.5s;
+	/*color: #CC9DD1;*/
+	opacity: 0.5;
 }
 
 .projBody{
@@ -128,4 +113,18 @@ img{
 
 video:focus {
   outline: none;
+}
+
+#icons{
+	text-align: center;
+	padding: 20px;
+
+}
+i{
+	color: black;
+}
+
+a:hover i{
+	opacity: 0.5;
+	transition: 0.5s;
 }

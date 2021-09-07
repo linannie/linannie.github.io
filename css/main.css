@@ -1,14 +1,16 @@
 /* front page */
 
-* {
+/** {
 	
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+
   margin: 0;
   padding: 0;
   
-}
-body * {
-font-family:'QuickSand'!important;
+}*/
+body /***/{
+/*font-family:'QuickSand'!important;*/
+/*font-family: 'Open Sans', sans-serif;*/
+font-family: 'Raleway', sans-serif;
 }
 
 body i {
@@ -44,19 +46,26 @@ html {
 .infoText {
 	color:#595858;
 	line-height: 50px;
+	margin-top: 0px;
 }
 
 .name{
 	/*text-align: center;*/
 	/*font-family: "Sacramento";*/
-	font-size: 60px;
-	color: #CC9DD1;
+	font-size: 40px;/*60px;*/
+	/*color: #CC9DD1;*/
+	color: #1a1a1a;
 
 	margin-bottom: 50px;
 	padding-left: 100px;
-	width: 90%;
-	margin-top: -10px;
-
+	width: 100%;
+	margin-top: -20px;
+	font-family: 'Abril Fatface', cursive;
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+.name:hover {
+	transition: 0.5s;
+	opacity: 0.5;
 }
 
 #nameDiv{
@@ -68,7 +77,8 @@ html {
 	margin-top: 90px;
 	font-size: 20px;
 	width: 95%;
-
+	font-family: 'Abril Fatface', cursive;
+/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 
 }
 
@@ -133,8 +143,17 @@ li:hover{
 }
 
 #icons{
-	
-	padding-top: 10px;
+	text-align: center;
+	padding: 20px;
+
+}
+i{
+	color: black;
+}
+
+a:hover i{
+	opacity: 0.5;
+	transition: 0.5s;
 }
 
 #aboutTitle{
@@ -149,8 +168,9 @@ li:hover{
 }
 
 .link:hover {
-	transition: 0.3s;
-	color: #CC9DD1;
+	transition: 0.5s;
+	/*color: #CC9DD1;*/
+	opacity: 0.5;
 }
 
 .bio img{
