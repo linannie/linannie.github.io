@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
     	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 		<title>Annie Lin</title>
-		<link rel="icon" href="pics/001-dog.png">
+		<link rel="icon" href="pics/logoAnnie.png">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&family=Mochiy+Pop+P+One&family=Rubik:wght@300;600&display=swap" rel="stylesheet">
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,45 +18,64 @@
 	<!--<img src="pics/annie.JPG">-->
 	<body>
 
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fas fa-chevron-up"></i>
+		</button>
 
 		<!--Navigation bar-->
 		<script src="js/nav.js"></script>
-
-<!--
-		<div id="shortBio">
-			<br>
+		<br><br>
+		<div id="bioContainer">
+			<div id="shortBio">
+				<br><br><br><br>
 			
+				<div id="leftDiv">
+					<p  style="text-align:center;font-weight: bold; font-size: 40px; color:#91bd8e;font-family: 'Mochiy Pop P One', sans-serif;">Hi there, I'm Annie Lin. </p>
+				</div>
 
-			<p  style="font-weight: bold; font-size: 30px; color:464646;">Hi, I'm Annie! </p>
-			
+				<div id="rightDiv">
+					
+					<div id="rightText">
+					<p id="bioText" style="font-size: 18px;line-height: 40px color: black;" >
+					I’m an engineer-turned designer who is interested in <b >UX Research + Product Design</b>. I'm currently an <b>M.S. HCI student</b> 
 
-				<p class="infoText" style="font-size: 20px;line-height: 40px" >As a recent gradute from UC Davis who studied Computer Science with a minor in Psychology, I'm interested in bridging the gap between the two fields through <span style="color:#FAC20A">Human-Computer Interaction</span>.
-				</p>
+					<a target="_blank" href="https://www.hcde.washington.edu/"><span class="hoverLink"style="color:#91bd8e"><b><u>@UW-HCDE</u></b></span></a>, and I want to use my interdisciplinary background to design meaningful products.
+
+					<br><br>
+					Check out my projects below!
+					</p>
+					</div>
+					
 				
+				</div>
+			
+			</div>
 
-				<p class="infoText" style="font-size: 20px;line-height: 30px">My research interests are <i>computer supported cooperative work and social computing</i>, <i>behavioral and cognitive sciences in computing</i>, and <i>assistive technology</i>.</p>
-		
-				<p class="infoText" style="font-size: 20px;line-height: 30px">Feel free to connect and chat with me!</p>
-
-
-			<br>
+				<br><br>
+			<div id="arrowContainer">
+				<a title ="Work" href = "#allProj"><img id="down-arrow" src="pics/down-arrow.png"></a>
+			</div>
+			<br><br>
 		</div>
--->
 
-		<table id="allProj">
+
+
+		<div id="tableContainer">
+		<table id="allProj" >
 		<tr class="row" id="r">
 			<td>
 				<div class="widgets">
 				<a title="Beanstalk" href="uxProjects/beanstalk/bean.html"><img class="projImg" src="pics/beanie.png"></a>
-				<div><p class="infoText">A complete remake of Instagram</p></div>
+				<div><p class="infoText">Beanstalk</p></div>
+				<p class="infoSubtext">An iOS app for color identification | Prototyping, iOS Development</p>
 				</div>
 			</td>
 
 			<td>
 				<div class="widgets">
 				<a title="FBMemes" href="uxProjects/research/fbMeme.html"><img class="projImg" src="pics/memeProj.png"></a>
-				<div><p class="infoText">Facebook meme research</p></div>
+				<div><p class="infoText">Meme research on FB</p></div>
+				<p class="infoSubtext">HCI, CSCW, Social Computing</p>
 				</div>
 			</td>
 				
@@ -64,17 +83,20 @@
 			
 			
 		</tr>
+		<br>
 		<tr class="row" id="r">
 			<td>
 				<div class="widgets">
 				<a title="Mantis" href="uxProjects/mantis/mantis.html"><img class="projImg" src="pics/mantisHome.png"></a>
-				<div><p class="infoText">An iOS app for color identification</p></div>
+				<p class="infoText">Mantis</p>
+				<p class="infoSubtext">A color identification app | Product Design, Prototyping</p>
 				</div>
 			</td>
 			<td>
 				<div class="widgets">
 				<a title="Ringly Analysis" href="uxProjects/ringly/ringly.html"><img class="projImg" src="pics/ringly.png"></a>
-				<div><p class="infoText">Usability Analysis: Ringly</p></div>
+				<div><p class="infoText">Ringly</p></div>
+				<p class="infoSubtext">Usability Analysis</p>
 				</div>
 				
 			</td>
@@ -84,31 +106,35 @@
 			
 			
 		</tr>
+		<br>
 		<tr class="row" id="r">
 			<td>
 				<div class="widgets">
 				<a title="Spotify vs. Zara" href="uxProjects/spotify/spot.html"><img class="projImg" src="pics/spotty.png"></a>
-				<div><p class="infoText">Usability Analysis: Spotify and Zara</p></div>
+				<div><p class="infoText">Spotify and Zara</p></div>
+				<p class="infoSubtext">Usability Analysis</p>
 			</div>
 				
 			</td>
 			<td>
 				<div class="widgets">
 				<a target="_blank" title="Moodsic" href="https://linannie.github.io/moodsic/"><img class="projImg" src="pics/moodsic.png"></a>
-				<div><p class="infoText">A website to suggest music based on your mood</p></div>
+				<div><p class="infoText">Moodsic</p></div>
+				<p class="infoSubtext">A website to suggest music based on your mood | WebDev</p>
 				</div>
 			</td>
 
 			
 			
 		</tr>
-
+		<br>
 		</tr>
 		<tr class="row" id="r">
 			<td>
 				<div class="widgets">
 				<a target="_blank" title="SnapDoc" href="https://devpost.com/software/snapdoc"><img class="projImg" src ="pics/ibm.png"></a>
-				<div><p class="infoText">A web app to diagnose skin conditions</p></div>
+				<div><p class="infoText">SnapDoc</p></div>
+				<div><p class="infoSubtext">A web app to diagnose skin conditions | WebDev</p></div>
 				</div>
 				
 			</td>
@@ -117,7 +143,8 @@
 			<td>
 				<div class="widgets">
 				<a target="_blank" title="Meerkat" href="http://mattdea.github.io/meerkat/"><img class="projImg" src="pics/meerkat.png"></a>
-				<div><p class="infoText">Learning management system</p></div>
+				<div><p class="infoText">Meerkat</p></div>
+				<div><p class="infoSubtext">Learning management system | WebDev</p></div>
 				</div>
 			</td>
 			
@@ -127,6 +154,7 @@
 
 		
 	</table>
+	</div>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script>
 		// scroll reveal for as many rows as you want!

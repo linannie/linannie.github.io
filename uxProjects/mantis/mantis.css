@@ -1,7 +1,7 @@
 body /***/{
 /*font-family:'QuickSand'!important;*/
 /*font-family: 'Open Sans', sans-serif;*/
-font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
 }
 
 body i {
@@ -10,6 +10,11 @@ font-family:'FontAwesome'!important;
 
 html {
   scroll-behavior: smooth;
+}
+
+h2 {
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: #262626;
 }
 
 #myBtn {
@@ -50,7 +55,7 @@ html {
 	padding-left: 100px;
 	width: 100%;
 	margin-top: -20px;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Mochiy Pop P One', sans-serif;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 .name:hover {
@@ -62,12 +67,17 @@ html {
 	float: left;
 
 }
+#top-bar {
+
+margin-top: -50px;
+
+}
 
 #links{
 	margin-top: 90px;
 	font-size: 20px;
 	width: 95%;
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Mochiy Pop P One', sans-serif;
 /*border: 1px solid rgba(0, 0, 0, 0.3);*/
 
 }
