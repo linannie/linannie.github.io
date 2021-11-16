@@ -12,11 +12,14 @@ html {
   scroll-behavior: smooth;
 }
 
-h2 {
+h1{
 	font-family: 'Mochiy Pop P One', sans-serif;
 	color: #262626;
 }
 
+h2{
+	font-family: 'Mochiy Pop P One', sans-serif;
+}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -92,6 +95,26 @@ margin-top: -50px;
 	opacity: 0.5;
 }
 
+.tableHeader {
+	font-weight: bold;
+}
+table {
+	margin: 0 auto;
+	font-size: 14px;
+}
+img{
+	height: 312.5px;
+	width: 500px;
+
+}
+td{
+	padding: 10px;
+}
+
+.projHeader {
+	text-align: center;
+	margin: 0 auto;
+}
 .projBody{
 	margin: 0 auto;
 	width: 700px;
